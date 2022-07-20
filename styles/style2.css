@@ -1,0 +1,343 @@
+/*-----------
+ Website Font
+ -----------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/*-----------
+ Common Class
+ ----------*/
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*----------------
+ Header Area Style
+ ---------------*/
+.header{
+    margin: 50px 0;
+}
+.header-container{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    width: 1400px;
+    justify-content: space-between;
+    background-color: #161616;
+    border-radius: 30px;
+    color: white;
+}
+.header-info{
+    margin-left: 60px;
+}
+.header-info h1{
+    font-size: 70px;
+    width: 530px;
+}
+.header-info p{
+    font-weight: 400;
+    font-size: 16px;
+    width: 506px;
+}
+.header-info button{
+    border: 0;
+    color: #ffffff;
+    padding: 16px 25px;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #DD0000;
+    border-radius: 5px;
+    margin: 30px 0 110px 0;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+.header-info button:hover{
+    background-color: #ffffff;
+    color: #161616;
+}
+.header-banner img{
+    position: relative;
+    top: 46px;
+    right: 60px;
+    width: 581px;
+    height: 613px;
+    transition: 200ms linear;
+}
+/*----------------------
+ Header Area Style Ended
+ ---------------------*/
+/*---------------
+ Main Panel Style
+ --------------*/
+.main-container{
+    width: 1400px;
+    margin: auto;
+}
+.all-main-contents{
+    display: flex;
+    justify-content: space-between;
+}
+.side-navigator{
+    width: 312px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 30px;
+    background-color: #161616;
+    height: 100%;
+    border-radius: 10px;
+}
+.side-navigator button{
+    width: 252px;
+    height: 64px;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.side-navigator button:hover{
+    background-color: #DD0000;
+    color: #ffffff;
+}
+.side-navigator .active{
+    background-color: #DD0000;
+    color: #ffffff;
+}
+.side-navigator .last-nav{
+    margin-bottom: 0;
+}
+.match-blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+}
+.match-container{
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    padding: 50px 30px;
+}
+.match{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.match span{
+    margin: 0 23px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.match-info{
+    text-align: center;
+}
+.match-info h5{
+    font-size: 20px;
+    color: #161616;
+    margin-bottom: 10px;
+}
+.match-info p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #4D4D4D;
+}
+/*------------------------
+ Main Panel Style End here
+  ----------------------*/
+/*-------------------------
+ Footer Panel Style Started
+ ------------------------*/
+#footer-container{
+    margin-top: 130px;
+    background-color: #161616;
+    text-align: center;
+    padding: 100px 0;
+}
+#footer-title{
+    margin-bottom: 0;
+    font-size: 40px;
+    color: white;
+    padding-bottom: 25px;
+}
+#footer-container hr{
+    height: 1px;
+    width: 70%;
+    margin: auto;
+    border: none;
+    background-color: gray;
+}
+#footer-info{
+    padding-top: 25px;
+    color: white;
+}
+#footer-info span{
+    margin-right: 50px;
+}
+.social-media-links a i{
+    margin-right: 15px;
+    font-size: 30px;
+    padding-top: 25px;
+    color: white;
+}
+/*-----------------------
+ Footer Panel Style Ended 
+ ----------------------*/
+ /*--------------------
+ Responsive For Mobile
+ -------------------*/
+@media only screen and (max-width: 767px) {
+    .header-container{
+        text-align: center;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-info h1{
+        position: relative;
+        left: -50px;
+        font-size: 25px;
+        width: 100%;
+    }
+    .header-info p{
+        width: 100%;
+        position: relative;
+        left: -50px;
+    }
+    .header-info button{
+        position: relative;
+        left: -50px;
+    }
+    .header-banner img{
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 7px;
+        right: 0px;
+    }
+    .main-container{
+        width: 100%;
+    }
+    .all-main-contents{
+        flex-direction: column;
+        margin: auto;
+    }
+    .side-navigator{
+        margin: auto;
+        background-color: transparent;
+    }
+    .side-navigator button{
+        border: 0;
+    }
+    .match-blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .match-container{
+        margin: auto;
+    }
+    .view-all-button{
+        margin: auto;
+        width: 40%;
+    }
+    .footer-container{
+        width: 100%;
+    }
+    
+    #footer-info span{
+        font-size: 15px;
+        display: flex;
+        position: relative;
+        right: -22px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
+/*--------------------
+ Responsive For Tablet
+ -------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .header-container{
+        width: 90%;
+        min-height: 460px;
+        max-height: 460px;
+    }
+    .header-info h1{
+        width: 100%;
+        font-size: 25px;
+    }
+    .header-info p{
+        margin-top: 0;
+        width:95%;
+        font-size: 14px;
+    }
+    .header-banner img{
+        width: 350px;
+        height: auto;
+        right: 5px;
+    }
+    .main-container{
+        width: 90%;
+    }
+    .all-main-contents{
+        flex-direction: column;
+        margin: auto;
+    }
+    .side-navigator{
+        flex-direction: row;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+        background-color: transparent;
+    }
+    .side-navigator button{
+        margin-bottom: 0;
+        border: 0;
+        margin-right: 10px;
+        width: 100%;
+    }
+    .side-navigator .active{
+        min-width: 250px;
+    }
+    .side-navigator .second-nav{
+        min-width: 180px;
+    }
+    .match-blogs{
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
+    #footer-container{
+        max-width: 100%;
+    }
+    #footer-info{
+        min-width: 60%;
+        max-width: 60%;
+        margin: auto;
+    } 
+    #footer-info span{
+        margin-right: 30px;
+    }
+}
+/*---------------------
+ Responsive For Desktop
+ --------------------*/
+ @media screen and (min-width: 1024px) {
+    .header-banner img{
+        position: relative;
+        top: 46px;
+        left: -10px;
+        width: 581px;
+        height: 613px;
+        animation: sliding 1000ms ease-in-out 1000ms infinite alternate;
+        animation-play-state: running;
+    }
+    @keyframes sliding {
+        0% {
+            right: 0;
+        }
+        100% {
+            left: -60px;
+        }
+    }
+}
